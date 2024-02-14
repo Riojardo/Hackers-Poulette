@@ -1,22 +1,23 @@
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    
     //
     //Sélectionne tous les éléments ayant la classe "error" et réinitialise leur contenu texte à une chaîne vide.
     //
     document.querySelectorAll('.error').forEach(errorElement => errorElement.textContent = '');
 
-    const firstName = document.getElementById('fname').value.trim();
-    const lastName = document.getElementById('lname').value.trim();
+    const firstName = document.getElementById('FirstName').value.trim();
+    const lastName = document.getElementById('LastName').value.trim();
     const email = document.getElementById('email').value.trim();
     const description = document.getElementById('description').value.trim();
-    const avatar = document.getElementById('avatar').value;
+    const avatar = document.getElementById('avatar').file;
 
     if (isEmpty(firstName) || firstName.length > 255) {
-        showError('fname', 'First name is required and must be between 2 and 255 characters.');
+        showError('FirstName', 'First name is required and must be between 2 and 255 characters.');
         event.preventDefault();
     }
 
     if (isEmpty(lastName) || lastName.length > 255) {
-        showError('lname', 'Last name is required and must be between 2 and 255 characters.');
+        showError('LastName', 'Last name is required and must be between 2 and 255 characters.');
         event.preventDefault();
     }
 
@@ -37,12 +38,21 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 });
 
 function showError(elementId, message) {
+    console.log(`Showing error for element with ID ${elementId}: ${message}`);
     const errorElement = document.createElement('span');
     errorElement.classList.add('error');
-    errorElement.textContent = message;
+    errorElement.innerHTML = message;
 
-    document.getElementById(elementId).insertAdjacentElement('afterend', errorElement);
+
+    const targetElement = document.getElementById(elementId);
+    if (targetElement) {
+        targetElement.parentNode.insertBefore(errorElement, targetElement.nextSibling);
+    } else {
+        console.error(`Element with ID ${elementId} not found.`);
+    }
 }
+
+
 
 function isEmpty(value) {
     return value.trim() === '';
@@ -54,13 +64,6 @@ function isValidEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-// function isValidEmail(email) {
-//     //
-//     // Vérifie que l 'email' contienne au min 2 caractères,un @ et un .
-//     //
-//     return email.length > 2 && email.includes('@') && email.includes('.');
-// }
-
 
 function isValidFileExtension(filename) {
     

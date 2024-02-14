@@ -45,6 +45,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
 </head>
 <body>
@@ -77,5 +78,6 @@ if (isset($_POST['submit'])) {
         <button type="submit" name="submit">Please Push on me X__X  </button><br>
         <br>
     </form>
+  <script defer type="module" src="script.js"></script>  
 </body>
 </html>
