@@ -1,5 +1,7 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    
+console.log("test");
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    console.log("it'swork !!!");
     //
     //Sélectionne tous les éléments ayant la classe "error" et réinitialise leur contenu texte à une chaîne vide.
     //
@@ -9,11 +11,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const lastName = document.getElementById('LastName').value.trim();
     const email = document.getElementById('email').value.trim();
     const description = document.getElementById('description').value.trim();
-    const avatar = document.getElementById('avatar').file;
+    const avatar = document.getElementById('file').value;
 
     if (isEmpty(firstName) || firstName.length > 255) {
         showError('FirstName', 'First name is required and must be between 2 and 255 characters.');
         event.preventDefault();
+        console.log("bhkjjjjjjjjjjjjjjjkbobo")
     }
 
     if (isEmpty(lastName) || lastName.length > 255) {
@@ -24,6 +27,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (!isValidEmail(email)) {
         showError('email', 'Please enter a valid email address.');
         event.preventDefault();
+        console.log("bhkjhkhkbobo")
     }
 
     if (isEmpty(description) || description.length > 1000) {
@@ -34,25 +38,17 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (avatar && !isValidFileExtension(avatar)) {
         showError('avatar', 'Invalid file type. Please upload a valid image (png, jpeg, gif).');
         event.preventDefault();
+        console.log("bobobobobo")
     }
 });
 
 function showError(elementId, message) {
-    console.log(`Showing error for element with ID ${elementId}: ${message}`);
     const errorElement = document.createElement('span');
     errorElement.classList.add('error');
-    errorElement.innerHTML = message;
+    errorElement.textContent = message;
 
-
-    const targetElement = document.getElementById(elementId);
-    if (targetElement) {
-        targetElement.parentNode.insertBefore(errorElement, targetElement.nextSibling);
-    } else {
-        console.error(`Element with ID ${elementId} not found.`);
-    }
+    document.getElementById(elementId).insertAdjacentElement('afterend', errorElement);
 }
-
-
 
 function isEmpty(value) {
     return value.trim() === '';
@@ -64,6 +60,13 @@ function isValidEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
+// function isValidEmail(email) {
+//     //
+//     // Vérifie que l 'email' contienne au min 2 caractères,un @ et un .
+//     //
+//     return email.length > 2 && email.includes('@') && email.includes('.');
+// }
+
 
 function isValidFileExtension(filename) {
     
