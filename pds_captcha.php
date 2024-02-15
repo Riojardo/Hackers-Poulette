@@ -79,7 +79,7 @@ foreach (mb_str_split($operation) as $obj) {
 }
 
 $champquestion="<p>
-<label for=\"reponsecap\">".$messageinfos."<br>\n<br /><u>".$o."</u> <em>(en chiffres)</em>&nbsp;</label>\n<input class=\"bg-gray-100\" type=\"text\" name=\"reponsecap\" value=\"\" />\n<input name=\"reponsecapcode\" type=\"hidden\" value=\"".$resultat."\" /></p>";
+<label for=\"reponsecap\">".$messageinfos."<br>\n<br /><u>".$o."</u> <em>(en chiffres)</em>&nbsp;</label>\n<input class=\"bg-blue-100 rounded-md\" type=\"text\" name=\"reponsecap\" value=\"\" />\n<input name=\"reponsecapcode\" type=\"hidden\" value=\"".$resultat."\" /></p>";
 return $champquestion;
 }
 else

@@ -79,3 +79,7 @@ function isValidFileExtension(filename) {
     const ext = filename.split('.').pop().toLowerCase();
     return allowedExtensions.includes(ext);
 }
+
+
+   
+

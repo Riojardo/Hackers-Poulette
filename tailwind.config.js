@@ -2,7 +2,8 @@
 module.exports = {
     content: [
         "./src/**/*.{html,js,php}",
-        "./index.php"
+        "./index.php",
+        "./dashboard.php"
 ],
     theme: {
       extend: {},
