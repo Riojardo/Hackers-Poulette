@@ -28,15 +28,17 @@ $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Dashboard</title>
 </head>
 <body class="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-3xl p-4 bg-white rounded-lg shadow-md">
-        <div class="flex items-center justify-center">
-            <h1 class="text-2xl font-bold text-center pr-80">Tableau de bord</h1>
-            <a href="http://hackers-poulette.test/">
-            <button class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800  mb-4">Redirection</button></a>
+<div class="w-full max-w-3xl p-4 bg-white rounded-lg shadow-md">
+<div class="w-full max-w-3xl p-4 bg-white rounded-lg shadow-md">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-bold text-center pr-80 mb-0">Tableau de bord</h1>
+            <a href="http://hackers-poulette.test/" class="ml-auto">
+                <button class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Redirection</button>
+            </a>
         </div>
         <table class="w-full border-collapse border border-gray-400">
             <thead>
-                <tr class="bg-gray-200">
+                <tr class="bg-blue-100">
                     <th class="py-2 px-4 border">ID</th>
                     <th class="py-2 px-4 border">First Name</th>
                     <th class="py-2 px-4 border">Last Name</th>
