@@ -1,6 +1,7 @@
 <?php
 
 include("pds_captcha.php");
+include("email-and-pwd.php");
 
 $host = "localhost";
 $database = "hacker-poulette";
@@ -68,11 +69,14 @@ echo "const adminPassword = '" . $adminPassword . "';";
 echo "</script>";
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="./src/output.css" rel="stylesheet">
     <script defer type="module" src="admin.js"></script>
     <title>Document</title>
@@ -105,19 +109,27 @@ echo "</script>";
         <br>
         <input class="bg-blue-100 rounded-md" type="email" id="email" name="email" size="30"/><br>
         <br>
+         <div>
+        <button type="button" id="envoyer">Envoyer</button>
+        </div><br>
         <label for="description" >description
         :</label><br>
         <br>
         <input class="bg-blue-100 rounded-md p-8" type="text" id="description" name="description" required minlength="2" maxlength="1000" placeholder="(2 to 1000 characters)"/><br>
         <br>
         <label for="file">"Vos meilleures images de poulet."</label><br>
+
+    <title>Document</title>
+
+       
+  
         <br>
         <input type="file" id="file" name="file" accept="image/png, image/jpeg, image/gif" /><br>
         <br> 
         <?php echo pdscaptcha("question"); ?>
         <br>
         <button class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
-         type="submit" name="submit">Please Push on me X__X  </button><br>
+         type="submit" name="ALL" id="ALL">Please Push on me X__X  </button><br>
          <img src="wing.png" alt="Chicken" class="image">
         <br>
      
@@ -125,5 +137,6 @@ echo "</script>";
     </form>
 </div>
   <script defer type="module" src="script.js"></script>
+
 </body>
 </html>

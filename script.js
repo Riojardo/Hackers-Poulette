@@ -1,6 +1,10 @@
 console.log("test");
+document.getElementById('envoyer').addEventListener('click', function() {
+    document.getElementById('contactForm').submit();
+});
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+document.getElementById('ALL').addEventListener('submit', function (event) {
+
     console.log("it'swork !!!");
     //
     //Sélectionne tous les éléments ayant la classe "error" et réinitialise leur contenu texte à une chaîne vide.
@@ -14,13 +18,13 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const avatar = document.getElementById('file').value;
 
     if (isEmpty(firstName) || firstName.length > 255) {
-        showError('FirstName', 'First name is required and must be between 2 and 255 characters.');
+        showError('fname', 'First name is required and must be between 2 and 255 characters.');
         event.preventDefault();
         console.log("bhkjjjjjjjjjjjjjjjkbobo")
     }
 
     if (isEmpty(lastName) || lastName.length > 255) {
-        showError('LastName', 'Last name is required and must be between 2 and 255 characters.');
+        showError('lname', 'Last name is required and must be between 2 and 255 characters.');
         event.preventDefault();
     }
 
@@ -79,7 +83,3 @@ function isValidFileExtension(filename) {
     const ext = filename.split('.').pop().toLowerCase();
     return allowedExtensions.includes(ext);
 }
-
-
-   
-

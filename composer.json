@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "wovosoft/laravel-package-make-commands": "^0.0.1"
+    }
+}
