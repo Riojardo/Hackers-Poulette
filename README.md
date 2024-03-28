@@ -1,6 +1,6 @@
 # Hackers-Poulette
 
-<h1 align="center">Hi 👋, this project is made by <a href=https://github.com/Riojardo">Visiter Codeur.com</a></h1>
+<h1 align="center">Hi 👋, this project is made by <a href=https://github.com/Riojardo">Robin Jardon</a> and <a href https://github.com/Aurelien229> Aurelien Blampain</h1>
 The Hackers Poulette Support Form is a PHP-based online contact form designed to facilitate communication between users and Hackers Poulette ™, a company specializing in Raspberry Pi accessory kits. It allows users to submit inquiries, which are then processed and stored securely in a MySQL database. The form incorporates client-side validation, CAPTCHA for spam prevention, and email confirmation upon successful submission. It is easy to install and use, making it an efficient tool for managing user queries and support requests. Contributions to enhance its functionality are encouraged.
 
 <h3 align="left">Connect with me:</h3>
