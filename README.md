@@ -5,6 +5,16 @@ The Hackers Poulette Support Form is a PHP-based online contact form designed to
 
 ### Back-end
 By Robin Jardon
+
+Features
+
+- Intégration de la validation côté client pour une expérience utilisateur améliorée.
+- Utilisation d'un CAPTCHA pour prévenir les spams et renforcer la sécurité.
+- Gestion de la base de données MySQL pour assurer la sécurité et la fiabilité des données.
+- Envoi de confirmations par email grâce à l'utilisation de Composer.
+    
+
+
 #### Tech Used
 
 -   <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a>  + <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> ✅ 
