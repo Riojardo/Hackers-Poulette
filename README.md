@@ -3,6 +3,17 @@
 <h1 align="center">Hi 👋, this project is made by <a href=https://github.com/Riojardo">Robin Jardon</a> and <a href https://github.com/Aurelien229> Aurelien Blampain</h1>
 The Hackers Poulette Support Form is a PHP-based online contact form designed to facilitate communication between users and Hackers Poulette ™, a company specializing in Raspberry Pi accessory kits. It allows users to submit inquiries, which are then processed and stored securely in a MySQL database. The form incorporates client-side validation, CAPTCHA for spam prevention, and email confirmation upon successful submission. It is easy to install and use, making it an efficient tool for managing user queries and support requests. Contributions to enhance its functionality are encouraged.
 
+### Back-end
+By Robin Jardon
+#### Tech Used
+
+-   <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a>  + <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> ✅ 
+
+### Front-end
+By Aurelien Blampain
+#### Tech Used
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/robin-jardon-9b24372a0/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/robin-jardon-9b24372a0/" height="30" width="40" /></a>
