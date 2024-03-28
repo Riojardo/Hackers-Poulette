@@ -14,17 +14,19 @@ By Aurelien Blampain
 
 Features
 
-    Client-side form validation using JavaScript for an enhanced user experience.
-    Administrator dashboard to visualize and manage data submitted via forms.
-    Utilization of Tailwind CSS for design, enabling easy customization and responsive design.
+- Client-side form validation using JavaScript for an enhanced user experience.
+- Administrator dashboard to visualize and manage data submitted via forms.
+- Utilization of Tailwind CSS for design, enabling easy customization and responsive design.
     
+
+
 #### Tech Used
 
 Technologies Used
 
-    JavaScript: Utilized for client-side form validation and DOM manipulation.
-    Tailwind CSS: CSS framework employed for the design of the application.
-    HTML: Markup language utilized for the structure of web pages.
+- JavaScript: Utilized for client-side form validation and DOM manipulation.
+- Tailwind CSS: CSS framework employed for the design of the application.
+- HTML: Markup language utilized for the structure of web pages.
 
 
 <h3 align="left">Connect with me:</h3>
